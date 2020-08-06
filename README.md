@@ -1,0 +1,1 @@
+This repository contains solutions to Python projects for math_266 Linear Algebra.  Course was conducted in Summer 2020.
