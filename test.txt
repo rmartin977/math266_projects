@@ -1,4 +1,0 @@
-This is simply a test text file to 
-learn how to use git.
-
-August 6,2020
