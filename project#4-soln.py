@@ -1,7 +1,7 @@
 '''
 Project #4
 Math 266 Linear Algebra
-Enter your name here 
+Solution
 Summer 2020
 '''
 
@@ -15,7 +15,7 @@ plt.ion()
 
 # ========== Part 1: Load the movie ratings dataset  ============
 
-ratings_matrix = np.load("ratings_matrix.npy")
+ratings_matrix = np.load("../data/ratings_matrix.npy")
 os.system('clear')
 
 # confirm the shape of the matrix is (1682,943)
@@ -30,7 +30,7 @@ print(f'\nThe size of the ratings_matrix is {ratings_matrix.shape}\n')
 # where id the the movie id number
 # for example: dictionary[0] will return "Toy Story (1995)""
 
-dictionary = np.load("dictionary.npy",allow_pickle=True).item()
+dictionary = np.load("../data/dictionary.npy",allow_pickle=True).item()
 
 # let us display the first 5 entries in the dictionary
 
@@ -170,14 +170,33 @@ top_5(ratings_matrix,63)
 print('\n\nThe top five recommendations for Room with a View are:\n'.title())
 top_5(ratings_matrix,212)
 
+# correct results are below:
 
-# ========== Part 4: Dimensionality reduction using SVD  ============
 
-# This part is completely optional and not for the faint of heart.
+# The Five Movies With Largest Totals Scores:
 
-# Use the procedure outlined in chapter 7 in the text to reduce the data matrix
-# from size 1682x943  to size 1682x100.
-# We  thus are reducing the dimension of our feature vectors from 1682 to 100.
+# Star Wars (1977)
+# Fargo (1996)
+# Return of the Jedi (1983)
+# Contact (1997)
+# Raiders of the Lost Ark (1981)
 
-# After reducing your matrix redo the last two exercises above and compare your 
-# results.  They should be the same!
+
+
+# In [5]: top_5(ratings_matrix,0)                                  
+# Toy Story (1995)
+# Star Wars (1977)
+# Return of the Jedi (1983)
+# Independence Day (ID4) (1996)
+# Rock, The (1996)
+
+# In [3]: top_5(ratings_matrix,212)                                
+# Room with a View, A (1986)
+# Enchanted April (1991)
+# Remains of the Day, The (1993)
+# Four Weddings and a Funeral (1994)
+# Cinema Paradiso (1988)
+
+
+
+
